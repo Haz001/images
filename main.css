@@ -1,0 +1,36 @@
+.grid{
+  display: block;
+}
+.img{
+  display: block;
+  float: left;
+  height: 26vw;
+
+  background: #2C2F33;
+  margin: 10px;
+}
+img{
+  height: 100%;
+}
+body{
+  background: #23272A;
+}
+a{
+  color: white;
+
+  
+}
+.opt{
+  display: block;
+  font-size: 0vw;
+  float: right;
+  width: 0vw;
+  transition: width 0.5s, font-size 0.5s;
+}
+.img:hover .opt{
+  display: block;
+  width: auto;
+  font-size: 2.2vw;
+
+
+}
