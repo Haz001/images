@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="main.css">
     <title>Images</title>
   </head>
-  <body>
+  <body id="bk">
+    <h1>Images</h1>
+    <p>All images are CC-BY-SA. What does this mean?</p>
     <div class="grid">
       <div class="img">
-
         <img src="img/jpeg/img006.jpg" alt="6">
         <div class="opt">
           <a href="img/original/img006.jpg">Original</a><br/>
@@ -61,4 +62,41 @@
 
     </div>
   </body>
+  <script>
+  function blur(event){
+
+    //document.getElementById('bk').classList.add("blur");
+    var x = document.getElementsByClassName("img");
+    var i = 0;
+    while(i < x.length){
+      if (x[i] != event.target){
+        x[i].classList.add("blur");
+      }
+
+
+      i++;
+    }
+
+  }
+  function unblur(event){
+
+
+    var x = document.getElementsByClassName("img");
+    var i = 0;
+    while(i < x.length){
+
+        x[i].classList.remove("blur");
+        i++;
+    }
+
+  }
+    var x = document.getElementsByClassName("img");
+    var i = 0;
+    while( i < x.length){
+      x[i].addEventListener("mouseenter",blur);
+      x[i].addEventListener("mouseleave",unblur);
+      i++;
+    }
+
+  </script>
 </html>
