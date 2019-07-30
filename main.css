@@ -1,5 +1,9 @@
 .grid{
   display: block;
+  width: 100%;
+
+
+  overflow: hidden;
 }
 .img{
   display: block;
@@ -17,9 +21,13 @@ img{
 body{
   background: #23272A;
   color: #fff;
+
 }
 a{
   color: white;
+  width: 100%;
+
+
 }
 .opt{
   display: block;
@@ -32,9 +40,29 @@ a{
   font-size: 2.2vw;
 }
 .img:hover{
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 .blur{
   filter: blur(0.5vw);
 
+}
+
+.rightlink{
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 8vw;
+  height: 8vw;
+  line-height: 8vw;
+  text-align: center;
+  background: #E4405F;
+  background-image: url(instagram.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 2% 2%;
+  transition: transform 0.5s;
+}
+.rightlink:hover{
+  transform: scale(1.05);
 }
