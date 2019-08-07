@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
 
-
+  padding: 0.5vw;
   overflow: hidden;
 }
 .img{
@@ -22,6 +22,7 @@ body{
   background: #23272A;
   color: #fff;
 
+
 }
 a{
   color: white;
@@ -29,6 +30,7 @@ a{
 
 
 }
+
 .opt{
   display: block;
   font-size: 0vw;

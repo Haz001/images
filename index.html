@@ -6,6 +6,7 @@
     <title>Images</title>
   </head>
   <body id="bk">
+
     <h1>Wellcome to my image resource page</h1>
     <p>All these images on this page are <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. So all you have to do is give a link to either my <a href="https://www.instagram.com/haz0.2/">Instagram</a> or this <a href="https://hazonline.co.uk/images/">page</a>.</p>
     <h3>You are free to:</h3>
@@ -23,8 +24,9 @@ for any purpose, even commercially.
       Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
       </li>
     </ul>
-    <div onclick="window.location = 'https://www.instagram.com/haz0.2/'" class="rightlink">
-      <a>Instagram</a>
+
+    <div id="inst" onclick="window.location = 'https://www.instagram.com/haz0.2/'" class="rightlink">
+      <a>Instagram!</a>
 
     </div>
 
@@ -178,9 +180,11 @@ for any purpose, even commercially.
   <script>
     var mob = false;
     function blur(event){
+      console.log("Blur");
       //document.getElementById('bk').classList.add("blur");
       if(!mob){
         var x = document.getElementsByClassName("img");
+
         var i = 0;
         while(i < x.length){
           if (x[i] != event.target){
@@ -193,6 +197,7 @@ for any purpose, even commercially.
     function unblur(event){
       if(!mob){
         var x = document.getElementsByClassName("img");
+
         var i = 0;
         while(i < x.length){
 
@@ -210,12 +215,15 @@ for any purpose, even commercially.
 
     mob = window.mobileAndTabletcheck();
     var x = document.getElementsByClassName("img");
+    var y = (document.getElementById('inst'));
     var i = 0;
     while( i < x.length){
       x[i].addEventListener("mouseenter",blur);
       x[i].addEventListener("mouseleave",unblur);
       i++;
     }
+    y.addEventListener("mouseenter",blur);
+    y.addEventListener("mouseleave",unblur);
 
   </script>
 </html>
