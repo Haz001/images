@@ -45,7 +45,7 @@ a{
   transform: scale(1.05);
 }
 .blur{
-  filter: blur(0.5vw);
+  filter: blur(0.1vw);
 
 }
 
