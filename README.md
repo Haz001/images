@@ -5,7 +5,20 @@ Just go to [hazonline.co.uk/images/](https://hazonline.co.uk/images/) and then h
 Original will be the original image from the camera (all JPEG, some RAW images may be added)
 JPEG will be JPEG formated.
 PNG will be png formated, not all images have PNG versions.
-
+## To do list:
+- [x] have usable download page
+- [x] Link to intstagram account
+- [ ] Consistant capitalisation and full-stops of todo list and spell checked.
+- [ ] include all images from instagram
+- [ ] make new interface for downlaoding
+  - [ ] Including view image details
+  - [ ] Including multi select images for download
+  - [ ] Dark and light mode
+  - [ ] Individual image detail and desciption pages
+  - [ ] Companion app?
+- [ ] make a how to attribute page
+- [ ] actually name them instead of number them
+- [ ] Flicker page and flicker link
 
 ## Copyleft
 All images under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
