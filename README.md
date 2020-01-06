@@ -21,7 +21,7 @@ for any purpose, even commercially.
 ## How to Attribute
 
 To attribute me please include this text (replace `(ref)` by a reference to the image, or a short description/timecode/jumplink):<br/>
-Image (ref) by Haz0.2, from [HazOnline.co.uk/images/](https://HazOnline.co.uk/images/index.html), is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+Image `(ref)` by Haz0.2, from [HazOnline.co.uk/images/](https://HazOnline.co.uk/images/index.html), is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ### For videos
 Include this text somewhere in your video or in the description.<br/>
