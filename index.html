@@ -42,22 +42,29 @@ for any purpose, even commercially.
         function addnum(num){
             if(imglst.includes(num)){
                 imglst.pop(num)
-                document.getElementById('17').children[1].children[0].innerHTML = "Add";
+                document.getElementById(num).children[1].children[0].innerHTML = "Add";
             }else{
                 imglst.push(num);
 
-                document.getElementById('17').children[1].children[0].innerHTML = "Remove";
+                document.getElementById(num).children[1].children[0].innerHTML = "Remove";
             }
             document.getElementById("lst").innerHTML = arrayToHTML(imglst);
         }
 
 
     </script>
+    <div class="container">
     <div class="grid">
         <div id="17" class="img">
           <img src="img/web/img017.jpg" alt="17">
           <div class="opt">
             <a class="add" onclick="addnum('17')">Add</a>
+          </div>
+        </div>
+        <div id="16" class="img">
+          <img src="img/web/img016.jpg" alt="16">
+          <div class="opt">
+            <a class="add" onclick="addnum('16')">Add</a>
           </div>
         </div>
     </div>
@@ -66,7 +73,7 @@ for any purpose, even commercially.
 
         </ul>
         <a>Download</a>
-    </div>
+    </div></div>
 
 
 </html>

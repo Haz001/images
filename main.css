@@ -1,13 +1,16 @@
 .grid{
   display: block;
-  width: 75%;
-
+  width: 80%;
+  float: left;
   padding: 0.5vw;
   overflow: hidden;
 }
+.container{
+    width: 95%;
+}
 .side{
-    width: 20%;
-    float: right;
+    width: 10%;
+    float: left;
 }
 .img{
   display: block;
@@ -20,7 +23,6 @@
 }
 img{
   height: 100%;
-
 }
 body{
   background: #23272A;
