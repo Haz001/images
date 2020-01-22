@@ -1,16 +1,23 @@
 .grid{
   display: block;
-  width: 80%;
+  width: 85%;
   float: left;
   padding: 0.5vw;
   overflow: hidden;
+}
+.grid:hover .img{
+    transform: scale(0.8);
 }
 .container{
     width: 95%;
 }
 .side{
-    width: 10%;
+    width: 20%;
     float: left;
+    position: fixed;
+    right: 0%;
+    top: 8vw;
+    background: gray;
 }
 .img{
   display: block;
@@ -27,32 +34,47 @@ img{
 body{
   background: #23272A;
   color: #fff;
-
-
 }
+
 a{
   color: white;
   width: 100%;
-
-
 }
-.add{
+.img:hover .add{
+  display: block;
   color: white;
-  width: 100%;
+  background: #23272A;
+  border-bottom-style: solid;
+  border-color: #2C2F33;
+  border-style: solid;
+  transition: border-bottom-style 1s;
 }
+.img:hover .add:hover{
+  border-bottom-color: white;
 
-.opt{
+  transition: border-bottom-color 1s;
+}
+.img .opt{
   display: block;
   font-size: 0vw;
+  padding: 0px;
   float: right;
-  transition: font-size 0.5s;
+  transition: padding 0.5s, font-size 0.5s;
+}
+
+.img:hover .opt{
+  display: block;
+  font-size: 0vw;
+  padding: 10px;
+  float: right;
+  transition: padding 0.5s, font-size 0.5s;
 }
 .img:hover .opt{
   width: auto;
   font-size: 2.2vw;
 }
 .img:hover{
-  transform: scale(1.05);
+  transform: scale(1.25);
 }
 .blur{
   filter: blur(0.1vw);
@@ -77,4 +99,12 @@ a{
 }
 .rightlink:hover{
   transform: scale(1.05);
+}
+.download{
+  color: white;
+  width: 100%;
+  text-decoration: underline;
+  background:none;
+  border:none;
+
 }
