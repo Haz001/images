@@ -12,7 +12,7 @@
     width: 95%;
 }
 .side{
-    width: 20%;
+    width: 16vw;
     float: left;
     position: fixed;
     right: 0%;
@@ -83,7 +83,7 @@ a{
 
 .rightlink{
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   width: 8vw;
@@ -95,11 +95,25 @@ a{
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: 2% 2%;
-  transition: transform 0.5s;
+  transition: transform 0.5s, z-index 0.5s;
+
+}
+.flic{
+
+  right: 8vw;
+
+  background: #0063DC;
+  background-image: url(flickr.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 2% 2%;
+
 }
 .rightlink:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
+  z-index: 5;
 }
+
 .download{
   color: white;
   width: 100%;
