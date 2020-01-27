@@ -3,13 +3,19 @@
   opacity: 0%;
   width: 2.5vw;
   height: 2.5vw;
-  z-index: 10;
   position: absolute;
   /*top: -14.6vw;*/
   transition: opacity 1s;
 }
 .notUp{
+  opacity: 0%;
+backdrop-filter: none;
   visibility: hidden;
+
+}
+.dlist{
+  list-style: none;
+  font-size: 150%;
 }
 .behind{
   position: fixed;
@@ -20,6 +26,7 @@
 
   background: #0000;
   backdrop-filter: blur(10px);
+  transition: backdrop 1s, opacity 1s, visibility 1s;
 }
 .top{
   position: fixed;
@@ -80,6 +87,26 @@ a{
   color: white;
   width: 100%;
 }
+
+.down{
+  width:20%;
+  float: left;
+  display: block;
+  color: white;
+  border-bottom-style: solid;
+  border-color: #00000000;
+  border-style: solid;
+  transition: border-bottom-style 1s;
+}
+.down:hover{
+  border-bottom-color: white;
+
+  transition: border-bottom-color 1s;
+}
+.clo{
+  width: 100%;
+}
+
 .img:hover .add{
   display: block;
   color: white;

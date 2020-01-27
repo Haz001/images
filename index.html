@@ -35,7 +35,7 @@ for any purpose, even commercially.
         <ul id="lst">
 
         </ul>
-        <button class="download">Download<img src="download.svg"/></button>
+        <button onclick="download()" class="download">Download<img src="download.svg"/></button>
     </div></div>
     <script src="db.js"></script>
     <script>
@@ -74,8 +74,9 @@ for any purpose, even commercially.
 
     </script>
     <div class="container">
-    <div id="grid" class="grid">
-      
+      <div id="grid" class="grid">
+
+      </div>
     </div>
     <script>
 
@@ -87,7 +88,36 @@ for any purpose, even commercially.
     </script>
 
 
-    <div class="behind notUp">
-      <div class="top"><h1>Download:</h1></div>
+    <div id="overlay" class="behind notUp">
+      <div  class="top">
+        <h1>Download:</h1>
+        <ul class="dlist" id="dlist">
+
+        </ul>
+
+      </div>
     </div>
+    <script>
+      var notUp = true;
+      function download(){
+        if(notUp){
+          document.getElementById("overlay").classList.remove("notUp");
+          notUp = false;
+        }
+        var result = "";
+        for (var i = 0; i < ilst.length;i++){
+            result+="<li><a class=\"down\" href=\""+imglst[ilst[i]].original.replace(" ","%20").replace("-","%2d")+"\" download>"+imglst[ilst[i]].name+"</a></li>\n";
+        }
+        result += "<br/><a class=\"down\" href=\"https://creativecommons.org/licenses/by/4.0/legalcode.txt\" download >licence.txt</a>"
+        result += "<br/><a class=\"down clo\" onclick=\"undown()\">Close</a>"
+        document.getElementById("dlist").innerHTML = result;
+
+      }
+      function undown(){
+        if(!notUp){
+          document.getElementById("overlay").classList.add("notUp");
+          notUp = true;
+        }
+      }
+    </script>
 </html>
