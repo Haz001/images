@@ -1,3 +1,43 @@
+.indicator{
+  /*visibility: hidden;*/
+  opacity: 0%;
+  width: 2.5vw;
+  height: 2.5vw;
+  z-index: 10;
+  position: absolute;
+  /*top: -14.6vw;*/
+  transition: opacity 1s;
+}
+.notUp{
+  visibility: hidden;
+}
+.behind{
+  position: fixed;
+  top:0%;
+  left:0%;
+  bottom: 0%;
+  right: 0%;
+
+  background: #0000;
+  backdrop-filter: blur(10px);
+}
+.top{
+  position: fixed;
+  top:10%;
+  left:10%;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 5vw;
+  padding-left:  5vw;
+  padding-right: 5vw;
+  background: #99AAB5ee;
+
+
+
+}
+.select{
+  opacity: 100%;
+}
 .grid{
   display: block;
   width: 85%;

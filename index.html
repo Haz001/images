@@ -35,7 +35,7 @@ for any purpose, even commercially.
         <ul id="lst">
 
         </ul>
-        <button class="download">Download</button>
+        <button class="download">Download<img src="download.svg"/></button>
     </div></div>
     <script src="db.js"></script>
     <script>
@@ -54,12 +54,13 @@ for any purpose, even commercially.
             var name = num;
             if(ilst.includes(name)){
                 remove(ilst,name);
-                document.getElementById(num).children[1].children[2].innerHTML = "Add";
+                document.getElementById(num).children[2].children[2].innerHTML = "Add";
+                document.getElementById(num).children[0].classList.remove("select");
             }else{
                 ilst.push(name);
+                document.getElementById(num).children[0].classList.add("select");
 
-
-                document.getElementById(num).children[1].children[2].innerHTML = "Remove";
+                document.getElementById(num).children[2].children[2].innerHTML = "Remove";
             }
             document.getElementById("lst").innerHTML = arrayToHTML(ilst);
         }
@@ -74,53 +75,19 @@ for any purpose, even commercially.
     </script>
     <div class="container">
     <div id="grid" class="grid">
-        <!--<div id="17" class="img">
-          <img src="img/web/img017-r.jpg" alt="17">
-          <div class="opt">
-            <a>Mayfly Pub</a><br/>
-            <a class="add" onclick="addnum('17')">Add</a>
-          </div>
-
-        </div>
-        <div id="16" class="img">
-          <img src="img/web/img016-r.jpg" alt="16">
-          <div class="opt">
-            <a>Rain Drops</a><br/>
-            <a class="add" onclick="addnum('16')">Add</a>
-          </div>
-        </div>
-        <div id="15" class="img">
-          <img src="img/web/img015-r.jpg" alt="15">
-          <div class="opt">
-            <a>Calcite Crystal</a><br/>
-            <a class="add" onclick="addnum('15')">Add</a>
-          </div>
-        </div>
-        <div id="14" class="img">
-          <img src="img/web/img014-r.jpg" alt="14">
-          <div class="opt">
-            <a>12cm of Snow</a><br/>
-            <a class="add" onclick="addnum('14')">Add</a>
-          </div>
-        </div>
-        <div id="13" class="img">
-          <img src="img/web/img013-r.jpg" alt="13">
-          <div class="opt">
-            <a>Santa xmas Gift</a><br/>
-            <a class="add" onclick="addnum('13')">Add</a>
-          </div>
-        </div>
-      -->
+      
     </div>
     <script>
 
     for (var j = 0;j < imglst.length;j++){
       var i = imglst.length - (j+1);
-      document.getElementById("grid").innerHTML += "<div id="+imglst[i].num+" class=\"img\"><img src="+imglst[i].webpath+" alt="+imglst[i].num+"><div class=\"opt\"><a>"+imglst[i].name+"</a><br/><a class=\"add\" onclick=\"addnum("+imglst[i].num+")\">Add</a></div></div>";
+      document.getElementById("grid").innerHTML += "<div id="+imglst[i].num+" class=\"img\"><img class=\"indicator\" src=\"selected.svg\"/><img src="+imglst[i].webpath+" alt="+imglst[i].num+"><div class=\"opt\"><a>"+imglst[i].name+"</a><br/><a class=\"add\" onclick=\"addnum("+imglst[i].num+")\">Add</a></div></div>";
       console.log(imglst[i].num);
     }
     </script>
 
 
-
+    <div class="behind notUp">
+      <div class="top"><h1>Download:</h1></div>
+    </div>
 </html>
