@@ -10,15 +10,16 @@ PNG will be png formated, not all images have PNG versions.
 - [x] Link to intstagram account
 - [ ] Consistant capitalisation and full-stops of todo list and spell checked.
 - [ ] include all images from instagram
-- [ ] make new interface for downlaoding
-  - [ ] Including view image details
-  - [ ] Including multi select images for download
+- [x] make new interface for downlaoding
+  - [x] Including view image details
+  - [x] Including multi select images for download
   - [ ] Dark and light mode
   - [ ] Individual image detail and desciption pages
   - [ ] Companion app?
 - [ ] make a how to attribute page
-- [ ] actually name them instead of number them
-- [ ] Flicker page and flicker link
+- [x] actually name them instead of number them
+- [x] Flickr page and flicker link
+  - [ ] Upload all images to flickr
 
 ## Copyleft
 All images under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).

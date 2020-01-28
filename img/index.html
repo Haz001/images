@@ -1,0 +1,11 @@
+<h1>Image</h1>
+<img src="" id="img" alt="" height="50%"><br/>
+Image number <output id="result"></output>
+<a id="download">Download</a>
+<script type="text/javascript">
+    var tag = window.location.hash.toString().replace("#","");
+    document.getElementById('img').src = "img"+tag+".jpg";
+    document.getElementById('result').value =tag;
+    document.getElementById('download').href = "img"+tag+".jpg";
+    document.getElementsByTagName('h1')[0].innerHTML += " "+tag+" Download Page";
+</script>
